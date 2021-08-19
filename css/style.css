@@ -11,7 +11,7 @@
 :root{
     --header-height:200px;
     /*========== colors ==========*/
-    --primary-darkblue-color:hsl(192, 37%, 48%);
+    --primary-darkaguamarine-color:hsl(192, 37%, 48%);
     --primary-normalviolet-color:hsl(268, 34%, 53%);
     --primary-darkviolet-color:hsl(240, 21%, 20%);
 
@@ -86,4 +86,28 @@ body{
     font-weight: var(--typography-medium);
     color: var(--neutral-grey-color);
     font-size: 16px;
+    padding-bottom: 40px;
+}
+.home_btns >a:first-child{
+    background-color:var(--primary-darkaguamarine-color);
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 40px;
+    color: var(--second-white-color);
+    font-weight: var(--typography-black);
+}
+.home_btns >a:first-child>span{
+    color: var(--second-light-blue);
+}
+.home_btns >a:last-child{
+    background-color:var(--primary-normalviolet-color);
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 40px;
+    color: var(--second-white-color);
+    font-weight: var(--typography-black);
 }
