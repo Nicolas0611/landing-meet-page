@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+:root{
+    --header-height:200px;
+    /*========== colors ==========*/
+    --primary-darkblue-color:hsl(192, 37%, 48%);
+    --primary-normalviolet-color:hsl(268, 34%, 53%);
+    --primary-darkviolet-color:hsl(240, 21%, 20%);
+
+    --neutral-grey-color:hsl(240, 10%, 57%);
+    
+    --second-light-blue:hsl(192, 90%, 77%);
+    --second-light-violet:hsl(268, 100%, 86%);
+    --second-white-color:hsl(0, 0%, 98%);
+
+    /*========== Tipografia ==========*/
+    --body-font: 'Red Hat Display', sans-serif;
+    --typography-h1: 65px;
+    --typography-p: 16px;
+    --typography-black: 900;
+    --typography-bold: 700;
+    --typography-medium:500;
+    --typography-light:400;
+
+}
+body{
+    background-color: var(--second-white-color);
+    font-family:var(--body-font) ;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--header-height)
+
+}
+.container_home{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+.grid{
+   display: grid;
+   flex-direction: row;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 10px;
+}
+.content_left{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+.content_right{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+.home_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home_content > h1{
+    font-weight:var(--typography-black);
+    color: var(--primary-darkviolet-color);
+    font-size: var(--typography-h1);
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 64px;
+    margin-bottom: 40px;
+}
+.home_content > p{
+    text-align: center;
+    font-weight: var(--typography-medium);
+    color: var(--neutral-grey-color);
+    font-size: 16px;
+}
